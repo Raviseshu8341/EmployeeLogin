@@ -1,0 +1,44 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Info</title>
+</head>
+<body>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #DDDDDD;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+    <h1>Employee Information</h1>
+    <h2>@ViewBag.s</h2>
+    <h2>@ViewData["result"]</h2>
+    <table>
+        <tr>
+            <th>EmployeeId</th>
+            <th>EmployeeName</th>
+            <th>EmployeeAddress</th>
+            <th>EmployeePhoneNo</th>
+            <th>IsPermenent</th>
+        </tr>
+        <tr>
+            <td>@Model.EmployeeId</td>
+            <td>@Model.EmployeeName</td>
+            <td>@Model.EmployeeAddress</td>
+            <td>@Model.EmployeePhoneNo</td>
+            <td>@Model.IsPermenent</td>
+        </tr>
+    </table>
+</body>
+</html>
